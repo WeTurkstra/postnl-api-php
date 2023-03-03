@@ -176,17 +176,11 @@ abstract class BaseHttpClient
     }
 
     /**
-     * Set the logger.
-     *
      * @param LoggerInterface $logger
-     *
-     * @return static
      */
-    public function setLogger(LoggerInterface $logger)
+    public function setLogger(LoggerInterface $logger): void
     {
         $this->logger = $logger;
-
-        return $this;
     }
 
     /**
